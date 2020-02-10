@@ -1,7 +1,10 @@
 # Program to take input percentage 
 # prints out corresponding the grade
 
-p = int(input("Please enter percentage mark: "))
+p = float(input("Please enter percentage mark: "))
+
+p = round(p)
+print("percentage = ",p)
 
 if p < 0 or p > 100:
     print("Not Valid")
